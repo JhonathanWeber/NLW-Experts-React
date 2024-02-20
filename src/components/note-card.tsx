@@ -12,7 +12,7 @@ interface NoteCardProps {
   onDeleteNote: (id: string) => void;
 }
 
-export function NoteCard({ note, onDeleteNote, key }: NoteCardProps) {
+export function NoteCard({ note, onDeleteNote }: NoteCardProps) {
   return (
     <Dialog.Root>
       <Dialog.Trigger className=" rounded-md text-left flex flex-col bg-slate-800 p-5 gap-3 overflow-hidden relative hover:ring-2 hover:ring-slate-600 outline-none focus:ring-2 focus:ring-lime-400">
